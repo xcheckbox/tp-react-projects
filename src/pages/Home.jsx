@@ -29,13 +29,9 @@ export default function Home() {
         <Hero />
       </Element>
       <main>
-        <AboutMe />
-        <Skills />
         <Projects />
-        <Contact />
       </main>
       <BackToTop home={"Home"} />
-      <Footer />
     </>
   );
 }

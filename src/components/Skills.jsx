@@ -18,7 +18,7 @@ export default function Skills() {
             <div className="underline"></div>
           </Title>
           <Row className="mt-3 align-items-center">
-            {skillData.map((skills) => {
+            {skillData?.map((skills) => {
               return (
                 <Col xs={4} key={skills.id} className="my-md-5">
                   <figure>

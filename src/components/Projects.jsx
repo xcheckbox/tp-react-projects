@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 // Data
-import { filteredProjects } from "../data";
+import { filteredProjects, projectsData } from "../data";
 // Icons
 import { FaGithub } from "react-icons/fa";
 // Components
@@ -21,7 +21,7 @@ import StyledCard from "./StyledCard";
 const StyledSection = styled.section``;
 
 export default function Projects() {
-  const [mainProjects, setMainProjects] = React.useState([]);
+  const [mainProjects, setMainProjects] = React.useState();
   const { theme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
@@ -66,15 +66,15 @@ export default function Projects() {
               Oops, you do not have any GitHub projects yet...
             </h2>
           )}
-          {mainProjects.length !== 0 && (
+          {projectsData.length !== 0 && (
             <>
-              <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
-                {mainProjects.map(function ({
+              <Row xs={1} md={2} lg={4} className="g-4 justify-content-center">
+                {projectsData.map(function ({
                   id,
                   image,
                   name,
                   description,
-                  html_url,
+                  url,
                 }) {
                   return (
                     <Col key={id}>
@@ -83,7 +83,7 @@ export default function Projects() {
                         image={image}
                         name={name}
                         description={description}
-                        url={html_url}
+                        url={url}
                       />
                     </Col>
                   );

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // Icons
-import { FaGithub } from "react-icons/fa";
+import { FaEye, FaEyeDropper, FaGithub } from "react-icons/fa";
 // Media
 import GH from "../images/GH.svg";
 // Components
@@ -24,6 +24,7 @@ const StyledCardComponent = styled.div`
 `;
 
 export default function StyledCard({ theme, image, name, description, url }) {
+  console.log(image)
   return (
     <StyledCardComponent>
       <Card bg={theme === "light" ? "white" : "dark"}>
@@ -35,12 +36,11 @@ export default function StyledCard({ theme, image, name, description, url }) {
         />
         <Card.Body className="overflow-auto text-center">
           <Card.Title>{name}</Card.Title>
-          <Card.Text>{description}</Card.Text>
         </Card.Body>
         <Card.Footer className="text-center">
-          <Card.Link href={url}>
-            {"View on GitHub "}
-            <FaGithub />
+          <Card.Link href={url} target="_blank">
+            {"View Project "}
+            <FaEye />
           </Card.Link>
         </Card.Footer>
       </Card>

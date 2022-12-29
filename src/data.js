@@ -12,6 +12,7 @@ import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
+import Project1 from "./images/project1.png";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -24,7 +25,8 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "xcheckbox";
+export const repository = "react-projects"
 
 // Blog link icon (imported above)
 export const Blog = <FaLink />;
@@ -87,6 +89,39 @@ export const skillData = [
     name: "GitHub",
   },
 ];
+
+export const projectsData = [
+  {
+    id: 1,
+    name: "Birthday Reminder",
+    image: Project1,
+    url: "https://spg-react-1-birthday-reminder.netlify.app/"
+  },
+  {
+    id: 2,
+    name: "Tours",
+    image: Project1,
+    url: "https://spg-react-2-tours.netlify.app/"
+  },
+  {
+    id: 3,
+    name: "Tours",
+    image: Project1,
+    url: "https://spg-react-2-reviews.netlify.app/"
+  },
+  {
+    id: 2,
+    name: "Tours",
+    image: Project1,
+    url: "https://tp-react-2-tours.netlify.app/"
+  },
+  {
+    id: 2,
+    name: "Tours",
+    image: Project1,
+    url: "https://tp-react-2-tours.netlify.app/"
+  }
+]
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 export const resume = null;

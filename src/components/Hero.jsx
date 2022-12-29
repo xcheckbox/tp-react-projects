@@ -94,16 +94,12 @@ export default function Hero() {
             </div>
           </Col>
           <Col className="d-none d-md-block">
-            <img
-              src={Logo}
-              alt="React Logo"
-              className="w-75 mx-auto hero-img"
-            />
+           
           </Col>
         </Row>
         <Row className="align-items-end down-container">
           <Col className="m-4 text-center">
-            <Link to={"About"} className="link-icons">
+            <Link to={"Projects"} className="link-icons">
               <FaChevronCircleDown />
             </Link>
           </Col>

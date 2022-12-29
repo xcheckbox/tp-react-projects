@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // Data
-import { githubUsername } from "../data";
+import { githubUsername, repository } from "../data";
 
 const initialState = {
   isLoading: true,
