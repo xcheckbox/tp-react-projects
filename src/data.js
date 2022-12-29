@@ -110,7 +110,7 @@ export const projectsData = [
     url: "https://spg-react-2-reviews.netlify.app/"
   },
   {
-    id: 2,
+    id: 4,
     name: "Tours",
     image: Project1,
     url: "https://tp-react-2-tours.netlify.app/"
