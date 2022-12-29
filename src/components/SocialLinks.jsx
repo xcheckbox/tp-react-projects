@@ -23,6 +23,7 @@ export default function SocialLinks() {
         target="_blank"
         aria-label="Check out my GitHub profile."
         className="link-icons"
+        rel="noopener noreferrer"
       >
         <FaGithub />
       </a>

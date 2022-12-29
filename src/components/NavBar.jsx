@@ -1,14 +1,13 @@
 import React from "react";
 import { useAppContext } from "../appContext";
-import { Link } from "react-scroll";
 // Components
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import { FixedNavSpacer, ToggleSwitch } from "./globalStyledComponents";
 // Images
 import Logo from "../images/logo.svg";
 
 export default function NavBar() {
-  const { theme, isExpanded, closeExpanded, toggleExpanded } = useAppContext();
+  const { theme, isExpanded } = useAppContext();
 
   return (
     <>

@@ -21,7 +21,7 @@ import StyledCard from "./StyledCard";
 const StyledSection = styled.section``;
 
 export default function Projects() {
-  const [mainProjects, setMainProjects] = React.useState();
+  const [, setMainProjects] = React.useState();
   const { theme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // Icons
-import { FaEye, FaEyeDropper, FaGithub } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 // Media
 import GH from "../images/GH.svg";
 // Components
