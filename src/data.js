@@ -24,6 +24,7 @@ import Project9 from "./images/project9.png";
 import Project10 from "./images/project10.png";
 import Project11 from "./images/project11.png";
 import Project12 from "./images/project12.png";
+import Project13 from "./images/project13.png";
 import Project14 from "./images/project14.png";
 import Project15 from "./images/project15.png";
 import Project16 from "./images/project16.png";
@@ -183,6 +184,12 @@ export const projectsData = [
     name: "Sidebar And Modal",
     image: Project12,
     url: "https://spg-react-12-sidebar-modal.netlify.app/"
+  },
+    {
+    id: 13,
+    name: "Stripe Menu",
+    image: Project13,
+    url: "https://spg-react-13-stripe-menu.netlify.app/"
   },
   {
     id: 14,
