@@ -6,15 +6,12 @@ import {
   selectError,
   selectIsLoading,
 } from "../pages/allProjectsSlice";
-import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 // Data
 import { filteredProjects, projectsData } from "../data";
-// Icons
-import { FaGithub } from "react-icons/fa";
 // Components
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 
@@ -89,20 +86,6 @@ export default function Projects() {
                   );
                 })}
               </Row>
-              {data.length > 3 && (
-                <Container className="text-center mt-5">
-                  <Link to="/All-Projects">
-                    <Button
-                      size="lg"
-                      variant={
-                        theme === "light" ? "outline-dark" : "outline-light"
-                      }
-                    >
-                      All <FaGithub /> Projects
-                    </Button>
-                  </Link>
-                </Container>
-              )}
             </>
           )}
         </Container>

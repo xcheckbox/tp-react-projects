@@ -15,7 +15,7 @@ Variables
   --transition: all 0.3s linear;
   --nav-height: 61px;
   --min-footer-height: 11vh;
-  --card-height: 30rem;
+  --card-height: 20rem;
 }
 
 /*
@@ -67,8 +67,8 @@ a:hover {
   }
 
   .card-img-top {
-    height: 50%;
-    object-fit: contain;
+    height: 75%;
+    object-fit: cover;
   }
 }
 
