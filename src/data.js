@@ -26,6 +26,7 @@ import Project11 from "./images/project11.png";
 import Project12 from "./images/project12.png";
 import Project14 from "./images/project14.png";
 import Project15 from "./images/project15.png";
+import Project16 from "./images/project16.png";
 import Project17 from "./images/project17.png";
 import Project18 from "./images/project18.png";
 import Project19 from "./images/project19.png";
@@ -194,6 +195,12 @@ export const projectsData = [
     name: "Cocktails",
     image: Project15,
     url: "https://spg-react-15-cocktails.netlify.app/"
+  },
+  {
+    id: 16,
+    name: "Markdown Preview",
+    image: Project16,
+    url: "https://spg-react-16-markdown-preview.netlify.app/"
   },
   {
     id: 17,
